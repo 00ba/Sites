@@ -1,0 +1,39 @@
+!!! 5
+%html{ "lang" => 'ja' }
+  %head
+    %meta{ "charset" => "utf-8" }
+    %title テスト
+    %meta{ "name" => "viewport", "content" => "width=device-width, initial-scale=1.0" }
+    %meta{ "name" => "description", "content" => "" }
+    %meta{ "name" => "auther", "content" => "ned rihine" }
+
+    %link{ "rel" => "stylesheet", "href" => "../assets/css/bootstrap.css" }
+    :css
+      body {
+          padding-top: 60px;
+      }
+    %link{ "rel" => "stylesheet", "href" => "../assets/css/bootstrap-responsive.css" }
+
+    %link{ "rel" => "shortcut icon", "href" => "../assets/ico/favicon.ico" }
+
+  %body
+    %div.navbar.navbar-fixed-top
+      %div.navbar-inner
+        %a.btn.btn-navbar{ "data-toggle" => "collapse", "data-target" => "nav-collapse" }
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+
+        %a.brand{ "href" => "#" } テスト
+        .nav-collapse
+          %ul.nav
+            %li.active
+              %a{ "href" => "#" } なんてらかんてら
+            %li
+              %a{ "href" => "#" } ほんにゃらかんたら
+            %li
+              %a{ "href" => "#" } かんてらたんたら
+
+    .container
+      %h1 見出しテスト
+      %p パラグラフテスト
